@@ -33,5 +33,26 @@ describe('home page', () => {
       
     });
   })
+
+  context("What you'll learn", () => {
+    it('first h3 correct text', () => {
+      cy.get("[class='mx-auto max-w-md px-4 text-center sm\:max-w-3xl sm\:px-6 lg\:px-8 lg\:max-w-7xl']").find("h3").eq(0).contains("Prepare your Testing Mindset")  
+    });
+    it('second h3 correct text', () => {
+      cy.get("[class='mx-auto max-w-md px-4 text-center sm\:max-w-3xl sm\:px-6 lg\:px-8 lg\:max-w-7xl']").find("h3").eq(1).contains("Learn What to Test")  
+    });
+    it('third h3 correct text', () => {
+      cy.get("[class='mx-auto max-w-md px-4 text-center sm\:max-w-3xl sm\:px-6 lg\:px-8 lg\:max-w-7xl']").find("h3").eq(2).contains("Debug Failing Tests Efficiently")  
+    });
+    it('third h3 correct text', () => {
+      cy.get("[class='mx-auto max-w-md px-4 text-center sm\:max-w-3xl sm\:px-6 lg\:px-8 lg\:max-w-7xl']").find("h3").eq(3).contains("Learn Database Initialization & Seeding")  
+    });
+    it('third h3 correct text', () => {
+      cy.get("[class='mx-auto max-w-md px-4 text-center sm\:max-w-3xl sm\:px-6 lg\:px-8 lg\:max-w-7xl']").find("h3").eq(4).contains("Understand Different Testing Types")  
+    });
+    it('third h3 correct text', () => {
+      cy.get("[class='mx-auto max-w-md px-4 text-center sm\:max-w-3xl sm\:px-6 lg\:px-8 lg\:max-w-7xl']").find("h3").eq(5).contains("Apply your Knowledge xD")  
+    });
+  })
 })
 
