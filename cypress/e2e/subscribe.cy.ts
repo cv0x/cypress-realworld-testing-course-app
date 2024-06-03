@@ -1,6 +1,7 @@
 describe('Newsletter Form', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/');
+    cy.get("#__next").should("be.visible")
   });
   context('Testing Next.js Applications with Cypress subscription', () => {  
     it('allows users to subscribe  to the email list', () => {
